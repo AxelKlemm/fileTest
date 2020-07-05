@@ -1,0 +1,51 @@
+<html>
+
+<body>
+
+    <head>Cookbook</head>
+
+
+    <div id="categroies">
+
+
+
+    </div>
+
+
+    <script type="application/javascript">
+
+
+        (function readFile() {
+            var request = new XMLHttpRequest();
+
+            request.open('get', 'categories', true);
+            request.send();
+
+            if (request)
+                request.onreadystatechange = function () {
+                    if (request.readyState === 4) {
+
+                        console.log(request.response);
+
+                    }
+                }
+
+
+            // (function readFiles() {
+            //     console.log("reading");
+
+            //     let test = fetch('/categories');
+            //     console.log(test);
+
+            //     test.then((r) => {
+            //         console.log(r);
+            //     })
+
+
+        })();
+
+    </script>
+
+</body>
+
+</html>
